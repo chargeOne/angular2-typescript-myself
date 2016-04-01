@@ -110,7 +110,7 @@ export class AppComponent implements OnInit{
     }
     onSelect(hero: Hero) { this.selectedHero = hero; }
     onKeyUp(event:KeyboardEvent) {
-        this.KeyValues += event.target.value + ' | ';
+        this.KeyValues += event.target['value'] + ' | ';
     }
     onKeyDown(value:string) {
         this.KeyValues += value + ' ||';
