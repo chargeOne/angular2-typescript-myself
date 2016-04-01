@@ -4,7 +4,7 @@
 /*将数据的处理重构到单独的服务模块中*/
 import {Injectable} from 'angular2/core';
 import {HEROES} from './../data/mock-heroes';
-import {Hero} from './../core/hero';
+import {Hero} from './../base/hero';
 
 @Injectable()
 export class HeroService {
