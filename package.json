@@ -23,7 +23,6 @@
     "bootstrap": "^3.3.6",
     "concurrently": "^2.0.0",
     "lite-server": "^2.1.0",
-    "sc": "^1.8.2",
     "typings": "^0.6.8"
   }
 }
