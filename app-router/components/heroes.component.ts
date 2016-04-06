@@ -11,9 +11,12 @@ import {HeroService} from './../service/hero.service';
     directives: [HeroDetailComponent]
 })
 export class HeroesComponent implements OnInit {
-    constructor(
-        private _router: Router,
-        private _heroService: HeroService) { }
+    private _router: Router;
+    private _heroService: HeroService;
+    constructor() {
+        this._heroService= new HeroService();
+        this._router = new Router();
+    }
     ngOnInit() {
         this.getHeroes();
     }

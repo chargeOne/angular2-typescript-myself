@@ -20,7 +20,8 @@ export class DashboardComponent implements OnInit {
     }
     ngOnInit() {
         this._heroService.getHeroes()
-            .then(heroes => this.heroes = heroes.slice(1,5));
+            //.then(heroes => this.heroes = heroes.slice(1,5));
+            .then(heroes => this.heroes = heroes.slice(1,Math.floor(Math.random()*heroes.length)+1);
     }
     gotoDetail(hero: Hero) {
         let link = ['HeroDetail', { id: hero.id }];
